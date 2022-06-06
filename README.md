@@ -1,24 +1,43 @@
-# README
+# Project: Flickr API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Description
+A photo widget project that allows you to display photos from any Flickr user's feed.
 
-Things you may want to cover:
+## Getting Started
 
-* Ruby version
+To get the app working , be sure to install all dependencies.
 
-* System dependencies
+```
+bundle install
+```
 
-* Configuration
+Create database and migrate schema:
 
-* Database creation
+```
+rails db:create
+rails db:migrate
+```
 
-* Database initialization
+Now run the application:
 
-* How to run the test suite
+```
+rails s
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+### Ruby Version
 
-* Deployment instructions
+* Rails 7 requires Ruby 2.7.0 or newer.
 
-* ...
+## Help
+
+Run command to view all of the options you can pass to rails application.
+```
+rails new --help
+```
+## Links
+[Heroku App]([https://arcane-beach-78469.herokuapp.com/)](https://shielded-beyond-98002.herokuapp.com/)
+
+## Web Resources
+
+* [The Odin Project](https://www.theodinproject.com/)
+* [Rails Guides](https://guides.rubyonrails.org/)
