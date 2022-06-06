@@ -1,9 +1,7 @@
-<%= form_with do |form| %>
-  <div>
-    <%= form.label :flickr_user, style: "display: block" %>
-    <%= form.text_field :flickr_user%>
-  </div>
-  <div>
-    <%= form.submit "Search" %>
-  </div>
+<%= render 'form' %>
+
+<% if @photos.present? %>
+  <% @photos.each do |photo| %>
+    <img src="<%= Flickr.url_t(photo) %>"/>
+  <% end %>
 <% end %>

@@ -1,0 +1,9 @@
+<%= form_with do |form| %>
+  <div>
+    <%= form.label :flickr_user, style: "display: block" %>
+    <%= form.text_field :flickr_user%>
+  </div>
+  <div>
+    <%= form.submit "Search" %>
+  </div>
+<% end %>
