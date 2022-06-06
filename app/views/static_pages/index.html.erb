@@ -1,7 +1,7 @@
 <%= render 'form' %>
 <br>
 
-<% if @photos.present? %>
+<% if params[:user_id].present? && @photos.present? %>
   <% @photos.each do |photo| %>
     <img src="<%= Flickr.url_n(photo) %>"/>
   <% end %>
