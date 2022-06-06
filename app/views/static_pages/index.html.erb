@@ -1,7 +1,8 @@
 <%= render 'form' %>
+<br>
 
 <% if @photos.present? %>
   <% @photos.each do |photo| %>
-    <img src="<%= Flickr.url_t(photo) %>"/>
+    <img src="<%= Flickr.url_n(photo) %>"/>
   <% end %>
 <% end %>
